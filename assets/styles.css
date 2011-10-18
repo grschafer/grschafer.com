@@ -1,4 +1,4 @@
-/* colors: http://kuler.adobe.com/#themeID/1431231 */
+/* background pattern from http://subtlepatterns.com/ */
 
 html {
     width:100%;
@@ -11,12 +11,12 @@ body {
     display:table-cell;
     vertical-align:middle;
 	font: 1em Helvetica, Verdana, Arial, sans-serif;
-    /*background:#f2d8a7;*/
-    background:url(grid.png);
+    background:url(subtlepatterns/bright_squares.png);
+    background:url(cubes.png);
 }
 .box {
     width:560px;
-    background:#a4a66a;
+    background:rgba(128,128,128,0.3);
     margin:auto;
     padding:20px;
     
