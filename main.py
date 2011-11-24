@@ -20,15 +20,14 @@ from google.appengine.ext import webapp
 from google.appengine.ext.webapp import util
 
 
-class AboutPage(webapp.RequestHandler):
+class IndexPage(webapp.RequestHandler):
     def get(self):
-        path = os.path.join(os.path.dirname(__file__), 'about.html')
+        path = os.path.join(os.path.dirname(__file__), 'index.html')
         self.response.out.write(template.render(path, {}))
 
 
 def main():
-    application = webapp.WSGIApplication([('/', AboutPage),
-                                         ('/about.html', AboutPage)],
+    application = webapp.WSGIApplication([('/', IndexPage),
                                          debug=True)
     util.run_wsgi_app(application)
 
