@@ -27,7 +27,7 @@ class IndexPage(webapp.RequestHandler):
 
 
 def main():
-    application = webapp.WSGIApplication([('/', IndexPage),
+    application = webapp.WSGIApplication([('/', IndexPage)],
                                          debug=True)
     util.run_wsgi_app(application)
 
