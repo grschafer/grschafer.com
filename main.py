@@ -24,10 +24,46 @@ class IndexPage(webapp.RequestHandler):
     def get(self):
         path = os.path.join(os.path.dirname(__file__), 'index.html')
         self.response.out.write(template.render(path, {}))
+class LaundryMon(webapp.RequestHandler):
+    def get(self):
+        path = os.path.join(os.path.dirname(__file__), 'laundrymon.html')
+        self.response.out.write(template.render(path, {}))
+class Memory(webapp.RequestHandler):
+    def get(self):
+        path = os.path.join(os.path.dirname(__file__), 'memory.html')
+        self.response.out.write(template.render(path, {}))
+class Particles(webapp.RequestHandler):
+    def get(self):
+        path = os.path.join(os.path.dirname(__file__), 'particles.html')
+        self.response.out.write(template.render(path, {}))
+class Perlin(webapp.RequestHandler):
+    def get(self):
+        path = os.path.join(os.path.dirname(__file__), 'perlin.html')
+        self.response.out.write(template.render(path, {}))
+class Spanish(webapp.RequestHandler):
+    def get(self):
+        path = os.path.join(os.path.dirname(__file__), 'spanish.html')
+        self.response.out.write(template.render(path, {}))
+class Spinmaze(webapp.RequestHandler):
+    def get(self):
+        path = os.path.join(os.path.dirname(__file__), 'spinmaze.html')
+        self.response.out.write(template.render(path, {}))
+class Tetradrop(webapp.RequestHandler):
+    def get(self):
+        path = os.path.join(os.path.dirname(__file__), 'tetradrop.html')
+        self.response.out.write(template.render(path, {}))
 
 
 def main():
-    application = webapp.WSGIApplication([('/', IndexPage)],
+    application = webapp.WSGIApplication([('/', IndexPage),
+                                          ('/laundrymon', LaundryMon),
+                                          ('/memory', Memory),
+                                          ('/particles', Particles),
+                                          ('/perlin', Perlin),
+                                          ('/spanish', Spanish),
+                                          ('/spinmaze', Spinmaze),
+                                          ('/tetradrop', Tetradrop),
+                                          ],
                                          debug=True)
     util.run_wsgi_app(application)
 
