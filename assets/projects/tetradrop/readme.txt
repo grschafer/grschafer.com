@@ -1,5 +1,5 @@
 Tetradrop
-(because I heard people get sued for calling things the other name)
+(because I heard people get sued for calling these games by the other name)
 
 Author: Greg Schafer
 Email: grschafer@gmail.com
