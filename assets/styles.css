@@ -8,11 +8,19 @@ html {
 body {
     width:100%;
     height:100%;
-    display:table-cell;
-    vertical-align:middle;
 	font: 1em Helvetica, Verdana, Arial, sans-serif;
     background:url(subtlepatterns/bright_squares.png);
     background:url(cubes.png);
+}
+.project-box {
+    width:600px;
+    margin:2em auto 2em auto;
+}
+table {
+    border:1px solid black;
+}
+td, tr, th {
+    border:1px solid black;
 }
 .box {
     width:560px;
