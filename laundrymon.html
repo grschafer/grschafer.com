@@ -1,34 +1,80 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Laundry Monitor</title>
-<link rel="stylesheet" type="text/css" href="assets/reset.css">
-<link rel="stylesheet" type="text/css" href="assets/styles.css">
-</head>
-<body>
-<a href="..">Back</a><br />
-<table>
-	<tr>
-		<th>When</th>
-		<td>(Inaccurate estimates for) Progress so far:<ul>
-			<li>Web services for Arduino: 80%</li>
-			<li>Web services for webpage: 20%</li>
-			<li>Arduino communication (wifi/radio code): 60%</li>
-			<li>Arduino data collection (current monitoring hardware): 0% (currently researching options)</li>
-		</ul></td>
-	</tr>
-	<tr>
-		<th>Tech</th>
-		<td><ul>
-			<li>Python with <a href="http://werkzeug.pocoo.org/">Werkzeug</a> to expose RESTful web service endpoints</li>
-			<li><a href="http://www.arduino.cc/">Arduino</a> with <a href="http://asynclabs.com/store?page=shop.product_details&flypage=flypage.tpl&product_id=26&category_id=6">WiShield 2.0</a> and <a href="http://www.glacialwanderer.com/hobbyrobotics/?p=291">radio transmitter + receiver</a> for communication</li>
-		</ul></td>
-	</tr>
-	<tr>
-		<th>What</th>
-		<td>I got tired of walking across the building over and over one day, always finding the laundry machines taken. So, I decided to set up some Arduinos with a wifi shield and make a website to show laundry machine usage/status and, maybe, notifications (SMS?) for when your laundry finishes. The biggest unknown is how to detect current (or that the machine is running) without spending lots of money on current monitors or other expensive sensors.</td>
-	</tr>
-</table>
-</body>
+<!DOCTYPE html>
+<!-- CSS Template from http://www.csstemplatesfree.org/jengo.html -->
+<html lang="en">	
+	
+	<head>		
+		
+		<meta charset="utf-8">
+		
+		<title>Laundry Monitor</title>
+		
+		<link rel="stylesheet" href="assets/styles/style.css" />
+
+		<!--[if IE 6]>
+            <link rel="stylesheet" href="assets/styles/ie6.css" />
+        <![endif]--> 
+        <!--[if IE 7]>
+            <link rel="stylesheet" href="assets/styles/ie7.css" />
+        <![endif]-->
+        <!--[if IE 8]>
+            <link rel="stylesheet" href="assets/styles/ie8.css" />
+        <![endif]-->
+		
+	</head>
+	
+	<body>
+	
+		<div id="wrap">
+	
+			<div id="header">
+			
+				<h1><a href=".." title="Home">Greg Schafer</a></h1>
+				<h2>Student</h2>
+                
+			</div><!--end header-->
+			
+			<div id="embed">
+			
+				<h3>In Progress</h3>
+			
+			</div><!--end intro-->
+			
+			<div id="main">
+			
+				<div id="content">
+				
+					<p class="service-title first"><em>What</em></p>
+					<p>I got tired of walking across the building over and over one day, always finding the laundry machines taken. So, I decided to set up some Arduinos with a wifi shield and make a website to show laundry machine usage/status and, maybe, mobile notifications for when your laundry finishes. The biggest remaining unknown is how to detect current (or at least, when the machine is running) without spending lots of money on current monitors or other expensive sensors.</p>
+					
+					<p class="service-title"><em>Tech</em></p>
+					<p><ul>
+                        <li>Python with <a href="http://werkzeug.pocoo.org/">Werkzeug</a> to expose RESTful web service endpoints and <a href="http://docs.python.org/library/sqlite3.html">sqlite3</a> for data persistence</li>
+                        <li><a href="http://www.arduino.cc/">Arduino</a> with <a href="http://asynclabs.com/store?page=shop.product_details&flypage=flypage.tpl&product_id=26&category_id=6">WiShield 2.0</a> and <a href="http://www.glacialwanderer.com/hobbyrobotics/?p=291">radio transmitter + receiver</a> for communication</li>
+                    </ul></p>
+					
+					<p class="service-title"><em>When</em></p>
+					<p>(Inaccurate estimates for) Progress so far:<ul>
+                        <li>Web service endpoints for Arduino: 80%</li>
+                        <li>Web service endpoints for webpage: 20%</li>
+                        <li>Arduino communication (wifi/radio code): 60%</li>
+                        <li>Arduino data collection (current monitoring hardware): 0% (currently researching options)</li>
+                    </ul></p>
+				
+				</div><!--end content-->
+				
+			</div><!--end main-->
+			
+			<div id="footer">
+			
+				<p>Copyright &copy; 2011 / Greg Schafer / All Rights Reserved <span class="twitter"><a href="http://github.grschafer.com">GitHub</a> / <a href="http://linkedin.grschafer.com">LinkedIn</a> / <a href="http://twitter.grschafer.com">Twitter</a></span></p>
+			
+			</div><!--end footer-->
+		
+		</div><!--end wrap-->
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
+		<script src="assets/js/jquery.custom.js"></script>
+	
+	</body>
+	
 </html>

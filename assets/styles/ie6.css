@@ -1,0 +1,8 @@
+#header h1, #header h2 { padding: 2px 0 0 0; }
+#footer .twitter { margin: -20px 0 40px 0; }
+#nav { height: 20px; margin-top: -55px; }
+#featured-projects { height: 215px; }
+#contact-form input { width: 250px; border: 1px #eee solid; margin: 0 0 15px 0; padding: 9px 14px 14px 14px; color: #444; font: 12px/20px "Helvetica Neue", Helvetica, Arial, sans-serif; }
+#contact-form .submit { background: url(../images/submit-button-orange.jpg) no-repeat; width: 109px; height: 38px; margin: 15px 0 0 -5px; border: none; cursor: pointer; }
+#contact-form .submit:hover { background: url(../images/submit-button-orange-hover.jpg) no-repeat; }
+#response { padding: 10px; border: 1px #ddd solid; background-color: #eee; color: #9e0616; }

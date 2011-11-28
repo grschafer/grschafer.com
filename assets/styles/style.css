@@ -1,0 +1,105 @@
+/*
+Template Name: Jengo
+Description: A Business/Portfolio HTML Template
+Author: Chris Creed
+URL: http://www.chris-creed.com
+*/
+
+/* Colors: Orange - #FF7200 */
+
+@import "reset.css";
+
+/* -------------------- */
+/* -- General Styles -- */
+/* -------------------- */
+#wrap { width: 800px; margin: 0 auto 50px; }
+body { font: 12px/20px "Helvetica Neue", Helvetica, Arial, sans-serif; background: url(../images/main-bg.jpg) repeat-x; color: #555; font-weight: normal; }
+h1 { font-size: 38px; margin: 0 0 10px 0; }
+h2 { font-size: 34px; margin: 0 0 10px 0; }
+h3 { font-size: 24px; margin: 0 0 10px 0; }
+h4 { font-size: 18px; margin: 0 0 10px 0; }
+h5 { font-size: 16px; margin: 0 0 5px 0; }
+h6 { font-size: 14px; margin: 0 0 5px 0; }
+p { margin: 0 0 15px 0; }
+a { text-decoration: none; color: #FF7200; }
+a:hover { color: #222; }
+em { font-style: italic; }
+ul { margin: 0 0 15px 15px; list-style-type: circle; }
+ol { margin: 15px 0 15px 20px; list-style-type: decimal; }
+strong, b { font-weight: bold; }
+.hide { display: none; }
+
+/* ------------ */
+/* -- Layout -- */
+/* ------------ */
+#main { margin: 40px 0 40px 0; overflow: hidden; }
+#content { float: left; width: 450px; }
+#sidebar { float: right; width: 200px; margin: 0 2px 0 0; }
+
+/* ------------ */
+/* -- Header -- */
+/* ------------ */
+#header { padding: 55px 0 0 0; margin: 0 0 40px 0; }
+#header h1 { float: left; font-size: 30px; color: #555; letter-spacing: -1px; font-weight: bold; margin: 0 0 35px 0; }
+#header h1 a { color: #555; }
+#header h2 { visibility: hidden; float: right; font-size: 20px; color: #aaa; font-weight: normal; margin: 3px 0 0 0; }
+
+/* --------- */
+/* -- Nav -- */
+/* --------- */
+#nav { clear: both; margin: 0; padding: 10px 0 9px 0; overflow: hidden; border-top: 1px #ddd dotted; border-bottom: 1px #ddd dotted; }
+#nav li { float: left; list-style: none; }
+#nav li span { padding: 0 10px; font-weight: bold; }
+#nav li a { color: #555; font-weight: bold; font-size: 14px; }
+#nav li a:hover { color: #FF7200; font-weight: bold; }
+#nav li a.current { color: #FF7200; }
+
+/* ---------------- */
+/* -- Front Page -- */
+/* ---------------- */
+#intro { clear: both; border-bottom: 1px #ddd dotted; }
+#intro h3 { font-size: 22px; font-weight: normal; line-height: 34px; margin: 15px 0 15px 0; }
+.frontpage h4 { font-size: 14px; }
+
+/* -- Featured Projects -- */
+#featured-projects { border-bottom: 1px #ddd dotted; overflow: hidden; padding: 30px 0 25px 0; }
+#featured-projects h4 { margin: 0 0 15px 0; }
+#featured-projects .project-img { float: left; margin: 0 0 18px 22px; border: 1px #eee solid; }
+#featured-projects .first { margin-left: 0; }
+
+/* -- Overview -- */
+#overview { margin: 35px 0 0 0; overflow: hidden; }
+#overview h4 { margin: 0 0 15px 0; }
+#overview .title { margin: 0 !important; }
+#overview #services { float: left; width: 350px; }
+#overview #articles { float: right; width: 350px; }
+
+/* -------------- */
+/* -- Sidebars -- */
+/* -------------- */
+#sidebar img { width: 200px; border: 1px #eee solid; margin: 0 0 20px 0; }
+#sidebar .project-title { display: block; margin: 0 0 2px 0; }
+#sidebar h5 { font-size: 14px; margin: 0 0 15px 0; }
+.contact-sidebar { background-color: #f5f5f5; padding: 20px 20px 10px 20px; border: 1px #eee solid; }
+.contact-sidebar p { line-height: 18px; }
+
+/* -------------- */
+/* -- Services -- */
+/* -------------- */
+#embed { clear: both; border-top: 1px #ddd dotted; border-bottom: 1px #ddd dotted; padding: 16px 0 10px 0; }
+#embed h3 { font-size: 22px; font-weight: normal; }
+.service-title { margin: 30px 0 5px 0; font-size: 14px; }
+.first { margin-top: 0; }
+
+/* --------------- */
+/* -- Portfolio -- */
+/* --------------- */
+.portfolio .project-title { margin: 0; }
+.portfolio .project-img { float: left; margin: 0 0 22px 22px; border: 1px #eee solid; }
+.portfolio .first { margin-left: 0; }
+
+/* ------------ */
+/* -- Footer -- */
+/* ------------ */
+#footer { clear: both; border-top: 1px #ddd dotted; margin: 40px 0 0 0; padding: 5px 0 0 0; color: #aaa; }
+#footer .twitter { float: right; }
