@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- CSS Template from http://www.csstemplatesfree.org/jengo.html -->
+<html lang="en">	
+	
+	<head>		
+		
+		<meta charset="utf-8">
+		
+		<title>Omgpop Game Automation</title>
+		
+		<link rel="stylesheet" href="assets/styles/style.css" />
+
+		<!--[if IE 6]>
+            <link rel="stylesheet" href="assets/styles/ie6.css" />
+        <![endif]--> 
+        <!--[if IE 7]>
+            <link rel="stylesheet" href="assets/styles/ie7.css" />
+        <![endif]-->
+        <!--[if IE 8]>
+            <link rel="stylesheet" href="assets/styles/ie8.css" />
+        <![endif]-->
+		
+	</head>
+	
+	<body>
+	
+		<div id="wrap">
+	
+			<div id="header">
+			
+				<h1><a href=".." title="Home">Greg Schafer</a></h1>
+				<h2>Student</h2>
+                
+			</div><!--end header-->
+			
+			<div id="embed">
+			
+				<h3>Omgpop Game Automation</h3>
+                <h5>(Ordered most to least impressive)</h5>
+                <iframe width="560" height="315" src="http://www.youtube.com/embed/BDNRC0w8K28" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="http://www.youtube.com/embed/sAAE5W9UKj4" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="http://www.youtube.com/embed/C9K743W2EQQ" frameborder="0" allowfullscreen></iframe>
+			</div><!--end intro-->
+			
+			<div id="main">
+			
+				<div id="content">
+				
+					<p class="service-title first"><em>What</em></p>
+					<p>After being introduced to some of the games on <a href="http://omgpop.com/">Omgpop</a>, the clear next step was to automate them for fun. While Typow and Letterblox were straightforward -- they involved typing back OCRed text and entering all 3-6 letter words containing given letters, respectively -- Swapples is proving to be a considerable challenge. Tile identification using an SVM (thanks to the suggestion and help of a family friend) works great as is shown in the first half of the Swapples video. The second half of the video shows how fast I wish it was making moves, though.  =P</p>
+                    <p>I'm currently working to make it smarter about choosing moves (to prioritize 4-/5-in-a-row, hourglasses, multipliers, etc.) and to make moves more quickly (by making multiple moves per analyzed screenshot by tracking how a move will affect the board).</p>
+					
+					<p class="service-title"><em>Tech</em></p>
+                    <p><ul>
+                        <li>Swapples - Python with <a href="http://scikit-learn.org/stable/modules/svm.html">scikits-learn SVMs</a> for detecting tiles, <a href="http://www.pythonware.com/products/pil/">PIL</a> for image grabbing, and <a href="http://numpy.scipy.org/">numpy</a> because it's great</li>
+                        <li>Letterblox - Python with <a href="http://www.rutherfurd.net/python/sendkeys">SendKeys</a> for sending keystrokes</li>
+                        <li>Typow - <a href="http://www.autohotkey.com">AutoHotkey</a> script that uses <a href="http://www.imagemagick.org">ImageMagick</a> for image grabbing and preprocessing, and <a href="http://code.google.com/p/tesseract-ocr">Tesseract</a> to OCR the image</li>
+                    </ul></p>
+					
+					<p class="service-title"><em>When</em></p> 
+					<p>Winter Break 2011-12</p>
+				
+				</div><!--end content-->
+				
+			</div><!--end main-->
+			
+			<div id="footer">
+			
+				<p><span class="twitter"><a href="https://github.com/grschafer">GitHub</a> / <a href="http://www.linkedin.com/in/grschafer">LinkedIn</a> / <a href="https://twitter.com/#!/grschafer">Twitter</a></span></p>
+			
+			</div><!--end footer-->
+		
+		</div><!--end wrap-->
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
+		<script src="assets/js/jquery.custom.js"></script>
+	
+	</body>
+	
+</html>
