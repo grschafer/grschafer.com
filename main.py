@@ -24,6 +24,10 @@ class IndexPage(webapp.RequestHandler):
     def get(self):
         path = os.path.join(os.path.dirname(__file__), 'index.html')
         self.response.out.write(template.render(path, {}))
+class Omgpop(webapp.RequestHandler):
+    def get(self):
+        path = os.path.join(os.path.dirname(__file__), 'omgpop.html')
+        self.response.out.write(template.render(path, {}))
 class LaundryMon(webapp.RequestHandler):
     def get(self):
         path = os.path.join(os.path.dirname(__file__), 'laundrymon.html')
@@ -56,6 +60,7 @@ class Tetradrop(webapp.RequestHandler):
 
 def main():
     application = webapp.WSGIApplication([('/', IndexPage),
+                                          ('/omgpop', Omgpop),
                                           ('/laundrymon', LaundryMon),
                                           ('/memory', Memory),
                                           ('/particles', Particles),
